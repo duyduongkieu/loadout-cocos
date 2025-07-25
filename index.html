@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Cocos Creator | demo</title>
+
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="yes" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" type="text/css" href="./style.ad77d.css" />
+    <link rel="icon" href="favicon.ico" />
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        #GameDiv,
+        #Cocos3dGameContainer,
+        #GameCanvas {
+            width: 100vw !important;
+            height: 100vh !important;
+            max-width: 100vw;
+            max-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="GameDiv" cc_exact_fit_screen="true">
+        <div id="Cocos3dGameContainer">
+            <canvas id="GameCanvas" tabindex="99"></canvas>
+        </div>
+    </div>
+
+    <!-- Polyfills bundle. -->
+
+    <script src="src/polyfills.bundle.5adbf.js" charset="utf-8">
+    </script>
+
+
+    <!-- SystemJS support. -->
+    <script src="src/system.bundle.543e6.js" charset="utf-8">
+    </script>
+
+    <!-- Import map -->
+    <script src="src/import-map.8f722.json" type="systemjs-importmap" charset="utf-8"> </script>
+
+    <script>
+        System.import('./index.4adfa.js').catch(function(err) {
+            console.error(err);
+        })
+    </script>
+</body>
+
+</html>
